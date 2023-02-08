@@ -11,7 +11,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 export default function About() {
 
     return(
-  
+        <div id="About">
     <Container maxW={'80vw'} color={'black'} borderRadius={10} justifyContent={'center'} textAlign="justify">
         
         <Heading
@@ -46,7 +46,7 @@ export default function About() {
             </Container>
             </Card>
             </Center>
-          </Container>
+          </Container></div>
         )
 
 }
