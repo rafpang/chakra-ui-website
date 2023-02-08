@@ -12,10 +12,9 @@ import Link from 'next/link';
 import Card from '@/components/Card';
 import Typed from "typed.js";
 import { useEffect, useRef } from "react";
-import { VscGithubInverted } from "react-icons/vsc";
 
 export default function Hero() {
-    const el = useRef("stuff");
+    const el = useRef<HTMLSpanElement | string | HTMLParagraphElement>('string');
     useEffect(() => {
     const typed = new Typed(el.current, {
       strings: ["Data Science", "Data Engineering", "Machine Learning", "Web Development"], // Strings to display
@@ -39,7 +38,7 @@ export default function Hero() {
     return (
     
         <div id="hero">
-    <Container maxW={'100vw'} minH={'50vh'} bgGradient='linear(to-l, #7928CA, #FF0080)' color={'black'} borderRadius={10}>
+    <Container maxW={'100vw'} minH={'60vh'} bgGradient='linear(to-r, #7928CA, #FF0080)' color={'black'} borderRadius={10}>
       <Stack
         textAlign={'center'}
         align={'center'}
@@ -47,7 +46,7 @@ export default function Hero() {
         py={{ base: 20, md: 28 }}>
         <Heading
           fontWeight={600}
-          fontSize={{ base: '3xl', sm: '4xl', md: '6xl' }}
+          fontSize={{ base: 'xl', sm: '4xl', md: '6xl' }}
           lineHeight={'110%'}>
             
           {/* Hi, I'm {' '} */}
@@ -56,16 +55,16 @@ export default function Hero() {
           </Text>
         </Heading>
       <Image src="/assets/rafi-circular.png"
-          alt="Picture of the author"
+          alt="Picture of rafi"
           width={200}
           height={200} />
           <Flex maxW={'100vw'}>
           <Heading 
           fontWeight={600}
           fontSize={{ base: 'xl', sm: '3xl', md: '4xl' }}
-          lineHeight={'110%'} textShadow='3px 3px #f4db7d'>
+          lineHeight={'110%'} textShadow='3px 3px #7928CA'>
          
-           <Text  as={'span'} color={'black'} ref={el} >
+           <Text  as={'span'} color={'white'} ref={el} >
            </Text>
            </Heading>
          
@@ -83,7 +82,7 @@ export default function Hero() {
           </Button>
         
             <Link  href="/files/Resume.pdf" locale="false" target="_blank"><Button rounded={'full'} px={6} bg={'gray.500'} color={'white'} > Resume </Button></Link>
-            Resume
+           
         
           
         </Stack>

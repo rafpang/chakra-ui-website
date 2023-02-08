@@ -28,7 +28,7 @@ export default function Skills() {
         py={{ base: 20, md: 28 }}>
         <Heading
           fontWeight={600}
-          fontSize={{ base: '3xl', sm: '4xl', md: '6xl' }}
+          fontSize={{ base: '2xl', sm: '3xl', md: '4xl' }}
           lineHeight={'110%'}>
           
           <Text as={'span'} color={'black.600'} textShadow='3px 3px #f4db7d'>
@@ -76,7 +76,11 @@ export default function Skills() {
                   <img  style={myStyle} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"  />
                   <img  style={myStyle} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original-wordmark.svg" />
                   <img style={myStyle} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"  />
-              
+                  <img style={{
+                        width: "120px",
+                        height: "100px"
+                    }} src="/assets/chakra.png"  />
+                                  
                 </div>
               <br />
             </div>
