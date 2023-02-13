@@ -17,17 +17,14 @@ import {
 import {
   FiHome,
   FiMenu,
-
   FiStar,
   FiBook,
-  
   FiInfo
 } from 'react-icons/fi';
-
 import Image from 'next/image'
 import { IconType } from 'react-icons';
 import { BiCode } from "react-icons/bi";
-import { ReactText } from 'react';
+
 
 interface LinkItemProps {
   name: string;
@@ -109,7 +106,7 @@ const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
 
 interface NavItemProps extends FlexProps {
   icon: IconType;
-  children: ReactText;
+  children: string;
   to: String;
 }
 const NavItem = ({ icon, children, to , ...rest }: NavItemProps) => {

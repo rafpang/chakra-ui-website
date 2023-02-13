@@ -10,9 +10,8 @@ import {
 } from "@chakra-ui/react";
 import { SimpleGrid } from "@chakra-ui/react";
 import Fade from "react-reveal/Fade";
-
 import "bootstrap/dist/css/bootstrap.min.css";
-// import './Skills.css'
+
 export default function Skills() {
   const myStyle = {
     width: "100px",
