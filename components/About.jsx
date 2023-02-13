@@ -46,7 +46,7 @@ export default function About() {
             >
               <Container
                 fontSize={{ base: "12px", md: "17px" }}
-                textAlign="center"
+                textAlign="justify"
               >
                 <p>
                   Chemical Engineering undergrad at NTU with a new-found
