@@ -47,7 +47,7 @@ export default function About() {
             >
               <Container
                 fontSize={{ base: "12px", md: "17px" }}
-                textAlign="justify"
+                textAlign={{ base: "center", sm: "justify" }}
                 color={"white"}
               >
                 <p>

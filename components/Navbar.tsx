@@ -149,6 +149,7 @@ interface MobileProps extends FlexProps {
 }
 const MobileNav = ({ onOpen, ...rest }: MobileProps) => {
   return (
+    <Box zIndex={9999} sx={{ position: 'sticky', top: '0', }}>
     <Flex
       ml={{ base: 0, md: 60 }}
       px={{ base: 4, md: 24 }}
@@ -158,6 +159,7 @@ const MobileNav = ({ onOpen, ...rest }: MobileProps) => {
       borderBottomWidth="1px"
       borderBottomColor={"purple.400"}
       justifyContent="flex-start"
+      
       {...rest}>
       <IconButton
         
@@ -168,11 +170,16 @@ const MobileNav = ({ onOpen, ...rest }: MobileProps) => {
         border = {"none"}
         _hover={{bg:"purple.400"}}
         bg={'purple.400'}
+        //width={"px"}
+        //height={"15px"}
+        
+        
       />
 
-      <Text fontSize="2xl" ml="8" fontFamily="monospace" fontWeight="bold" color="white">
+      <Text fontSize={"15px"} ml="8" fontFamily="monospace" fontWeight="bold" color="white">
         Rafi Pangestu
       </Text>
     </Flex>
+    </Box>
   );
 };
