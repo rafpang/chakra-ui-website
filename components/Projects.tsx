@@ -11,6 +11,7 @@ import {
 import Link from 'next/link';
 import Card from '@/components/Card';
 import { SimpleGrid } from '@chakra-ui/react'
+import Fade from "react-reveal/Fade";
 
 const projectsDict =[
     {title:"wheel-boost", description:"Wheelchair accessibility prediction using XGBoost and Scikit-Learn", skills:"Machine Learning, Classificiation", projectLink:'https://github.com/rafpang/wheelchair-xgboost'},
@@ -42,7 +43,9 @@ export default function Projects(){
           </Text>
           </Heading>
           </Center>
+      <Fade bottom={2200}>
       <SimpleGrid columns={{md:3,sm:2}} spacing={{md:2}}>
       {projectsDict.map(project => <Card key={project.title} title={project.title} description={project.description} skills={project.skills} projectLink={project.projectLink}/>)}
       </SimpleGrid>  
+      </Fade>
     </div>)}

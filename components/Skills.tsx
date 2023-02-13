@@ -9,6 +9,8 @@ import {
   IconProps,
 } from '@chakra-ui/react';
 import { SimpleGrid } from '@chakra-ui/react'
+import Fade from "react-reveal/Fade";
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 // import './Skills.css'
 export default function Skills() {
@@ -20,7 +22,9 @@ export default function Skills() {
 
 
     
-    return(<div id="Skills">
+    return(
+    <div id="Skills">
+      
     <Container my={3} maxW={'100vw'} bg={'grey.400'} color={'black'}>
       <Stack textAlign={'center'}
         align={'center'}
@@ -36,10 +40,11 @@ export default function Skills() {
           </Text>
           
           </Heading>
+          <Fade bottom duration={2200}>
           <div className="container">
         <div className="row">
           <div className="col-12">    
-                
+               
             <div className="inner-container reveal">
                <Text as={'span'} color={'black.600'} fontWeight={"bold"}>
             Data Science
@@ -59,7 +64,7 @@ export default function Skills() {
               </div>
                 <br />
                 <br />
-             
+            
               <div className="inner-container reveal">
                        <Text as={'span'} color={'black.600'} fontWeight={"bold"}>
             Web Development
@@ -104,12 +109,14 @@ export default function Skills() {
           </div>
         </div>
       </div>
+      
       </div>
-    </Stack>
-       
+      </Fade>
+      </Stack>
+        
 
-         
-    </Container>
+          
+      </Container>
     
     </div>)
     }

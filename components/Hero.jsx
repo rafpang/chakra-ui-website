@@ -9,6 +9,7 @@ import {
   IconProps,
   Image,
 } from "@chakra-ui/react";
+
 import Link from "next/link";
 import Card from "@/components/Card";
 import Typed from "typed.js";
@@ -61,7 +62,6 @@ export default function Hero() {
             fontSize={{ base: "xl", sm: "4xl", md: "6xl" }}
             lineHeight={"110%"}
           >
-            {/* Hi, I'm {' '} */}
             <Text as={"span"} color={"white"} textShadow="3px 3px #f4db7d">
               Hi, I'm Rafi
             </Text>

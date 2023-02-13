@@ -5,6 +5,7 @@ import {
   Text,Container, Card, Center
   
 } from '@chakra-ui/react';
+import Fade from "react-reveal/Fade";
 import styles from './styles.module.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -12,6 +13,7 @@ export default function About() {
 
     return(
         <div id="About">
+          
     <Container maxW={'80vw'} color={'black'} borderRadius={10} justifyContent={'center'} textAlign="justify">
         
         <Heading
@@ -25,6 +27,7 @@ export default function About() {
           </Text>
           </Heading>
           <Center>
+            <Fade bottom duration={2700}>
           <Card
           direction={{ base: 'column', sm: 'row' }}
           overflow='hidden'
@@ -37,16 +40,19 @@ export default function About() {
                 >
           
             <Container fontSize={{base:'12px', md: '17px'}} textAlign="center">
-      
+          
               <p>
                 Chemical Engineering undergrad at NTU with a new-found obsession with data, machine learning, 
                 and web development. Interested in internship opportunities in the fields of Data Science, Data Engineering, and Front End Development.
               </p>
-           
+         
             </Container>
             </Card>
+             </Fade>
             </Center>
-          </Container></div>
+          </Container>
+         
+          </div>
         )
 
 }
