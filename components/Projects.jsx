@@ -62,13 +62,16 @@ export default function Projects() {
           fontSize={{ base: "2xl", sm: "3xl", md: "4xl" }}
           lineHeight={"110%"}
         >
-          <Text as={"span"} color={"black.600"} textShadow="3px 3px #f4db7d">
+          <Text as={"span"} color={"#FF8FB1"} textShadow="1px 2px #f4db7d">
             Projects
           </Text>
         </Heading>
       </Center>
       <Fade bottom duration={2200}>
-        <SimpleGrid columns={{ md: 3, sm: 2 }} spacing={{ md: 2 }}>
+        <SimpleGrid
+          columns={{ lg: 3, md: 2, sm: 1, base: 1 }}
+          spacing={{ md: 2 }}
+        >
           {projectsDict.map((project) => (
             <Card
               key={project.title}

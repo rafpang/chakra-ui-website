@@ -32,7 +32,7 @@ export default function Skills() {
             fontSize={{ base: "2xl", sm: "3xl", md: "4xl" }}
             lineHeight={"110%"}
           >
-            <Text as={"span"} color={"black.600"} textShadow="3px 3px #f4db7d">
+            <Text as={"span"} color={"#FF8FB1"} textShadow="1px 2px #f4db7d">
               Skills
             </Text>
           </Heading>
@@ -41,7 +41,7 @@ export default function Skills() {
               <div className="row">
                 <div className="col-12">
                   <div className="inner-container reveal">
-                    <Text as={"span"} color={"black.600"} fontWeight={"bold"}>
+                    <Text as={"span"} color={"white"} fontWeight={"bold"}>
                       Data Science
                     </Text>
                     <br />
@@ -96,7 +96,7 @@ export default function Skills() {
                     <br />
 
                     <div className="inner-container reveal">
-                      <Text as={"span"} color={"black.600"} fontWeight={"bold"}>
+                      <Text as={"span"} color={"white"} fontWeight={"bold"}>
                         Web Development
                       </Text>
                       <br />
@@ -126,10 +126,7 @@ export default function Skills() {
                           style={myStyle}
                           src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
                         />
-                        <img
-                          style={myStyle}
-                          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original-wordmark.svg"
-                        />
+                        <img style={myStyle} src="assets/nextjs1.svg" />
                         <img
                           style={myStyle}
                           src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
@@ -147,7 +144,7 @@ export default function Skills() {
                     <br />
                     <br />
                     <div className="inner-container reveal">
-                      <Text as={"span"} color={"black.600"} fontWeight={"bold"}>
+                      <Text as={"span"} color={"white"} fontWeight={"bold"}>
                         Data Engineering
                       </Text>
                       <br />

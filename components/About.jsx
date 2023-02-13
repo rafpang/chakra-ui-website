@@ -28,7 +28,7 @@ export default function About() {
           pt={10}
           pb={10}
         >
-          <Text as={"span"} color={"black.600"} textShadow="3px 3px #f4db7d">
+          <Text as={"span"} color={"#FF8FB1"} textShadow="1px 2px #f4db7d">
             About Me
           </Text>
         </Heading>
@@ -43,10 +43,12 @@ export default function About() {
               pt={5}
               pb={5}
               px={5}
+              bg={"#2e2f35"}
             >
               <Container
                 fontSize={{ base: "12px", md: "17px" }}
                 textAlign="justify"
+                color={"white"}
               >
                 <p>
                   Chemical Engineering undergrad at NTU with a new-found

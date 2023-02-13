@@ -16,6 +16,7 @@ import Typed from "typed.js";
 import { useEffect, useRef } from "react";
 
 export default function Hero() {
+  // targetting element to change
   const el = useRef("string");
   useEffect(() => {
     const typed = new Typed(el.current, {
@@ -25,7 +26,7 @@ export default function Hero() {
         "Machine Learning",
         "Web Development",
       ], // Strings to display
-      // Speed settings, try diffrent values untill you get good results
+      // Speed settings for typed js
       startDelay: 300,
       typeSpeed: 100,
       backSpeed: 100,
@@ -33,7 +34,6 @@ export default function Hero() {
       loop: true,
     });
 
-    // Destropying
     return () => {
       typed.destroy();
     };
@@ -59,10 +59,10 @@ export default function Hero() {
         >
           <Heading
             fontWeight={600}
-            fontSize={{ base: "xl", sm: "4xl", md: "6xl" }}
+            fontSize={{ base: "xl", sm: "3xl", md: "4xl" }}
             lineHeight={"110%"}
           >
-            <Text as={"span"} color={"white"} textShadow="3px 3px #f4db7d">
+            <Text as={"span"} color={"white"} textShadow="3px 3px #7928CA">
               Hi, I'm Rafi
             </Text>
           </Heading>
@@ -87,16 +87,22 @@ export default function Hero() {
             <Button
               rounded={"full"}
               px={6}
-              colorScheme={"purple"}
-              bg={"purple.400"}
-              _hover={{ bg: "purple.500" }}
+              // bg={"gray.500"}
+              color={"white"}
+              variant="outline"
               onClick={handleGithub}
             >
               GitHub
             </Button>
 
             <Link href="/files/Resume.pdf" locale="false" target="_blank">
-              <Button rounded={"full"} px={6} bg={"gray.500"} color={"white"}>
+              <Button
+                rounded={"full"}
+                px={6}
+                // bg={"gray.500"}
+                color={"white"}
+                variant="outline"
+              >
                 {" "}
                 Resume{" "}
               </Button>

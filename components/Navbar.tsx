@@ -46,7 +46,7 @@ const LinkItems: Array<LinkItemProps> = [
 export default function Navbar({ children }: { children: ReactNode }) {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
-    <Box minH="100vh" bg={useColorModeValue('gray.100', 'gray.900')}>
+    <Box minH="100vh" bg={useColorModeValue('#212226', 'gray.200')}>
       <SidebarContent
         onClose={() => onClose}
         display={{ base: 'none', md: 'block' }}
@@ -79,21 +79,24 @@ interface SidebarProps extends BoxProps {
 const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
   return (
     <Box
-      bg={useColorModeValue('white', 'gray.900')}
-      borderRight="1px"
-      borderRightColor={useColorModeValue('gray.200', 'gray.700')}
+      bg={"#2e2f35"}
+      borderRight="1px gray.600"
+      borderRightColor={useColorModeValue('gray.200', 'gray.200')}
       w={{ base: 'full', md: 60 }}
       pos="fixed"
       h="full"
       {...rest}>
       <Flex h="20" alignItems="center" mx="8" justifyContent="space-between" flexDirection={"row"}>
         
-            <Text fontSize="20" fontFamily="monospace" fontWeight="bold">
+            <Text fontSize="20" fontFamily="monospace" fontWeight="bold" color={'white'}>
               Rafi Pangestu
             </Text>
+            {/* <Text fontSize="20" fontWeight="bold" color={"black"} textShadow="1px 2px #f4db7d">
+            Rafi Pangestu
+          </Text> */}
           
        
-        <CloseButton display={{ base: 'flex', md: 'none' }} onClick={onClose} />
+        <CloseButton display={{ base: 'flex', md: 'none' }} onClick={onClose} bg={'purple.400'} _hover={{bg:"purple.400"}}/>
       </Flex>
       {LinkItems.map((link) => (
         <NavItem key={link.name} icon={link.icon} to={link.to} onClick={onClose}>
@@ -123,6 +126,7 @@ const NavItem = ({ icon, children, to , ...rest }: NavItemProps) => {
           bg: 'purple.400',
           color: 'white',
         }}
+        color={"white"}
         {...rest}>
         {icon && (
           <Icon
@@ -150,19 +154,23 @@ const MobileNav = ({ onOpen, ...rest }: MobileProps) => {
       px={{ base: 4, md: 24 }}
       height="20"
       alignItems="center"
-      bg={useColorModeValue('white', 'gray.900')}
+      bg={"#2e2f35"}
       borderBottomWidth="1px"
-      borderBottomColor={useColorModeValue('gray.200', 'gray.700')}
+      borderBottomColor={"purple.400"}
       justifyContent="flex-start"
       {...rest}>
       <IconButton
+        
         variant="outline"
         onClick={onOpen}
         aria-label="open menu"
         icon={<FiMenu />}
+        border = {"none"}
+        _hover={{bg:"purple.400"}}
+        bg={'purple.400'}
       />
 
-      <Text fontSize="2xl" ml="8" fontFamily="monospace" fontWeight="bold">
+      <Text fontSize="2xl" ml="8" fontFamily="monospace" fontWeight="bold" color="white">
         Rafi Pangestu
       </Text>
     </Flex>

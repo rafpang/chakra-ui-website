@@ -32,7 +32,7 @@ export default function Card({title, description, skills, projectLink}: Project)
         bg="white"
         border={'1px'}
         borderColor="black"
-        boxShadow={useColorModeValue('6px 6px 0 black', '6px 6px 0 cyan')}>
+        boxShadow={useColorModeValue('6px 6px 0 #8f35d8', '6px 6px 0 #8f35d8')}>
         
         <Box p={4}>
           <Box
