@@ -64,7 +64,7 @@ export default function Navbar({ children }: { children: ReactNode }) {
         </DrawerContent>
       </Drawer>
       {/* mobilenav */}
-      <MobileNav display={{ base: 'flex', md: 'none' }} onOpen={onOpen} />
+      <MobileNav display={{ base: 'flex', md: 'none' }} onOpen={onOpen} onClose={onClose}/>
       <Box ml={{ base: 0, md: 60 }} p="4">
         {children}
       </Box>
@@ -146,8 +146,9 @@ const NavItem = ({ icon, children, to , ...rest }: NavItemProps) => {
 
 interface MobileProps extends FlexProps {
   onOpen: () => void;
+  onClose: () => void;
 }
-const MobileNav = ({ onOpen, ...rest }: MobileProps) => {
+const MobileNav = ({ onOpen, onClose, ...rest }: MobileProps) => {
   return (
     <Box zIndex={9999} sx={{ position: 'sticky', top: '0', }}>
     <Flex
@@ -159,6 +160,7 @@ const MobileNav = ({ onOpen, ...rest }: MobileProps) => {
       borderBottomWidth="1px"
       borderBottomColor={"purple.400"}
       justifyContent="flex-start"
+      onClick={onClose}
       
       {...rest}>
       <IconButton
