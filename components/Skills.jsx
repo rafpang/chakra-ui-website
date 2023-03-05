@@ -170,6 +170,11 @@ export default function Skills() {
                           className="skill-icon"
                           src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg"
                         />
+                        <img
+                          style={myStyle}
+                          className="skill-icon"
+                          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg"
+                        />
                       </div>
                     </div>
                     <br />
