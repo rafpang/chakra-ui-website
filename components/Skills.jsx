@@ -135,13 +135,10 @@ export default function Skills() {
                           style={myStyle}
                           src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
                         />
+                      
                         <img
                           style={myStyle}
-                          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
-                        />
-                        <img
-                          style={myStyle}
-                          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain-wordmark.svg"
+                          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain.svg"
                         />
                             
                       </div>
