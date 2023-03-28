@@ -132,12 +132,18 @@ export default function Skills() {
                           src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
                         />
                         <img
-                          style={{
-                            width: "120px",
-                            height: "100px",
-                          }}
-                          src="/assets/chakra.png"
+                          style={myStyle}
+                          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
                         />
+                        <img
+                          style={myStyle}
+                          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
+                        />
+                        <img
+                          style={myStyle}
+                          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain-wordmark.svg"
+                        />
+                            
                       </div>
                       <br />
                     </div>
