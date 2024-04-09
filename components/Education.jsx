@@ -63,7 +63,6 @@ export default function Education() {
 
                 <Text py="2">
                   Bachelor of Engineering - Chemical & Biomolecular Engineering
-                  | Current CGPA: 4.51/5.00
                 </Text>
               </CardBody>
             </Stack>
