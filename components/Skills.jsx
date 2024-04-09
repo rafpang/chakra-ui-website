@@ -129,10 +129,6 @@ export default function Skills() {
                         <img style={myStyle} src="assets/nextjs1.svg" />
                         <img
                           style={myStyle}
-                          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
-                        />
-                        <img
-                          style={myStyle}
                           src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
                         />
                       
